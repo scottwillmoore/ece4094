@@ -1,5 +1,7 @@
 import React from "react";
 
+import Editor from "./components/Editor";
+
 export default function App() {
     return (
         <div className="app">
@@ -12,7 +14,7 @@ export default function App() {
                         <p>Left</p>
                     </div>
                     <div className="fill column">
-                        <h1>Hello, world!</h1>
+                        <Editor />
                     </div>
                     <div className="right">
                         <p>Right</p>
