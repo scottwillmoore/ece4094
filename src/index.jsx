@@ -1,9 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-const target = document.getElementById("app");
+import App from "./App";
 
-ReactDOM.render(<h1>Hello, world!</h1>, target);
+const target = document.getElementById("root");
+
+ReactDOM.render(<App />, target);
 
 if (import.meta.hot) {
     import.meta.hot.accept();
