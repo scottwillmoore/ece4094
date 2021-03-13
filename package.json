@@ -1,0 +1,15 @@
+{
+    "private": "true",
+    "name": "ece4094",
+    "author": "Scott Moore",
+    "scripts": {
+        "build": "snowpack build",
+        "develop": "snowpack dev"
+    },
+    "devDependencies": {
+        "@snowpack/plugin-react-refresh": "^2.4.0",
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1",
+        "snowpack": "^3.0.13"
+    }
+}
