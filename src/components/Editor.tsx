@@ -1,27 +1,36 @@
+// Consider migration to TypeScript for better auto-completion.
+
+// I think the canvas is being created on each mouse event. The canvas should
+// instead only redraw on each mouse event. In addition, it should be
+// rate-limited by requestAnimationFrame.
+
+// Implement the ability to scroll vertically and horizontally and zoom in and
+// out of the canvas.
+
 import React, { useEffect, useRef, useState } from "react";
 
-function useMouse(reference) {
+function useMouse(ref) {
     const [position, setPosition] = useState({ x: 0, y: 0 });
     useEffect(() => {
         const listener = ({ target, clientX: x, clientY: y }) => {
             const { left, top } = target.getBoundingClientRect();
             setPosition({ x: x - left, y: y - top });
         };
-        reference.current.addEventListener("mousemove", listener);
+        ref.current.addEventListener("mousemove", listener);
         return () => {
-            reference.current.removeEventListener("mousemove", listener);
+            ref.current.removeEventListener("mousemove", listener);
         };
     });
     return position;
 }
 
 export default function Editor() {
-    const canvasReference = useRef(null);
+    const canvasRef = useRef<HTMLCanvasElement>();
 
-    const { x: mouseX, y: mouseY } = useMouse(canvasReference);
+    const { x: mouseX, y: mouseY } = useMouse(canvasRef);
 
     useEffect(() => {
-        const canvas = canvasReference.current;
+        const canvas = canvasRef.current;
         canvas.width = canvas.clientWidth;
         canvas.height = canvas.clientHeight;
 
@@ -38,5 +47,5 @@ export default function Editor() {
         context.fillRect(round(mouseX) - size, round(mouseY) - size, 2 * size, 2 * size);
     });
 
-    return <canvas ref={canvasReference} className="editor"></canvas>;
+    return <canvas ref={canvasRef} className="editor"></canvas>;
 }

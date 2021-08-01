@@ -11,5 +11,5 @@ module.exports = {
             url: "/",
         },
     },
-    plugins: ["@snowpack/plugin-react-refresh"],
+    plugins: ["@snowpack/plugin-react-refresh", "@snowpack/plugin-typescript"],
 };
