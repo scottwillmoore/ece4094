@@ -1,7 +1,12 @@
 import React from "react";
 
 import css from "./App.module.css";
+import { Editor } from "./components/Editor";
 
 export function App() {
-	return <p className={css.greeting}>Hello, world!</p>;
+	return (
+		<div className={css.app}>
+			<Editor />
+		</div>
+	);
 }
