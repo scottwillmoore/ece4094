@@ -1,0 +1,5 @@
+.parcel-cache/
+.turbo/
+.vscode/
+dist/
+node_modules/
