@@ -1,5 +1,0 @@
-{
-	"$schema": "http://json.schemastore.org/tsconfig",
-	"extends": "@ece4094/config/typescript/base.json",
-	"include": ["src"]
-}

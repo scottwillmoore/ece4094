@@ -1,16 +1,11 @@
-import ReactDOM from "react-dom";
-import { useEffect, useState } from "react";
+import { createRoot } from "react-dom/client";
 
-function App() {
-	const [count, setCount] = useState(0);
+import { App } from "./components/App";
 
-	useEffect(() => {
-		const id = setInterval(() => setCount((count) => count + 1), 1000);
-		return () => clearInterval(id);
-	}, []);
-
-	return <p>{count}</p>;
+const rootElement = document.getElementById("root");
+if (!rootElement) {
+	throw new Error("Failed to get the root element");
 }
 
-const root = document.getElementById("root");
-ReactDOM.render(<App />, root);
+const root = createRoot(rootElement);
+root.render(<App />);

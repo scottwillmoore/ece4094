@@ -6,10 +6,9 @@
 		"checkJs": true,
 		"esModuleInterop": true,
 		"forceConsistentCasingInFileNames": true,
-		"importsNotUsedAsValues": "error",
 		"isolatedModules": true,
 		"jsx": "preserve",
-		"module": "commonjs",
+		"module": "esnext",
 		"moduleResolution": "node",
 		"noEmit": true,
 		"noFallthroughCasesInSwitch": true,
@@ -22,6 +21,6 @@
 		"resolveJsonModule": true,
 		"skipLibCheck": true,
 		"strict": true,
-		"target": "es6"
+		"target": "esnext"
 	}
 }

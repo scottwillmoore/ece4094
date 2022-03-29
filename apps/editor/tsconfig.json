@@ -1,5 +1,8 @@
 {
 	"$schema": "http://json.schemastore.org/tsconfig",
+	"compilerOptions": {
+		"types": ["react-dom/next", "react/next"]
+	},
 	"extends": "@ece4094/config/typescript/base.json",
 	"include": ["src"]
 }
