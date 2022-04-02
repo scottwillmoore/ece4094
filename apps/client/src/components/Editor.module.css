@@ -1,0 +1,20 @@
+.editor {
+	height: 100%;
+	position: relative;
+	user-select: none;
+	width: 100%;
+}
+
+.document {
+	height: 100%;
+	position: absolute;
+	width: 100%;
+}
+
+.textFill {
+	fill: var(--slate-12);
+}
+
+.componentFill {
+	fill: var(--blue-8);
+}

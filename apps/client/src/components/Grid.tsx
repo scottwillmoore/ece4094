@@ -2,6 +2,8 @@ import { FunctionComponent, useId } from "react";
 
 import { Transform } from "./Editor";
 
+import css from "./Grid.module.css";
+
 export type GridType = "cross" | "dot" | "graph";
 
 export type GridProperties = {
@@ -37,7 +39,7 @@ export const Grid: FunctionComponent<GridProperties> = ({
 						x2={halfSize + crossSize}
 						y2={halfSize + crossSize}
 						strokeWidth={crossThickness}
-						className="stroke-indigo-300 dark:stroke-indigo-900"
+						className={css.stroke}
 					/>
 
 					<line
@@ -46,7 +48,7 @@ export const Grid: FunctionComponent<GridProperties> = ({
 						x2={halfSize + crossSize}
 						y2={halfSize - crossSize}
 						strokeWidth={crossThickness}
-						className="stroke-indigo-300 dark:stroke-indigo-900"
+						className={css.stroke}
 					/>
 				</>
 			);
@@ -59,7 +61,7 @@ export const Grid: FunctionComponent<GridProperties> = ({
 					cx={halfSize}
 					cy={halfSize}
 					r={dotSize}
-					className="fill-indigo-300 dark:fill-indigo-900"
+					className={css.fill}
 				/>
 			);
 			break;
@@ -74,7 +76,7 @@ export const Grid: FunctionComponent<GridProperties> = ({
 						x2={size}
 						y2={halfSize}
 						strokeWidth={graphThickness}
-						className="stroke-indigo-300 dark:stroke-indigo-900"
+						className={css.stroke}
 					/>
 
 					<line
@@ -83,7 +85,7 @@ export const Grid: FunctionComponent<GridProperties> = ({
 						x2={halfSize}
 						y2={size}
 						strokeWidth={graphThickness}
-						className="stroke-indigo-300 dark:stroke-indigo-900"
+						className={css.stroke}
 					/>
 				</>
 			);
@@ -91,7 +93,7 @@ export const Grid: FunctionComponent<GridProperties> = ({
 	}
 
 	return (
-		<svg className="absolute h-full w-full">
+		<svg className={css.grid}>
 			<defs>
 				<pattern
 					id={patternId}

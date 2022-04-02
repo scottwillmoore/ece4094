@@ -1,9 +1,13 @@
 {
 	"endOfLine": "auto",
-	"printWidth": 100,
-	"singleAttributePerLine": true,
-	"useTabs": true,
-
+	"importOrder": [
+		"^@ece4094/.*$",
+		"^[./](?!.*[.]css$).*$",
+		"^[./].*[.]module[.]css$",
+		"^[./].*[.]css$"
+	],
+	"importOrderSeparation": true,
+	"importOrderSortSpecifiers": true,
 	"overrides": [
 		{
 			"files": "*.html",
@@ -11,5 +15,8 @@
 				"singleAttributePerLine": false
 			}
 		}
-	]
+	],
+	"printWidth": 100,
+	"singleAttributePerLine": true,
+	"useTabs": true
 }

@@ -1,0 +1,46 @@
+.app {
+	background-color: var(--slate-1);
+	color: var(--slate-12);
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+}
+
+.topContainer {
+	border-color: var(--slate-6);
+	border-style: solid;
+	border-width: 0 0 var(--border-1) 0;
+	display: flex;
+	flex: none;
+	height: var(--size-8);
+	padding: var(--size-1);
+}
+
+.horizontalContainer {
+	display: flex;
+	flex-grow: 1;
+}
+
+.leftPanelContainer {
+	border-color: var(--slate-6);
+	border-style: solid;
+	border-width: 0 var(--border-1) 0 0;
+	display: flex;
+	flex: none;
+	width: var(--size-12);
+}
+
+.editorContainer {
+	display: flex;
+	flex-grow: 1;
+}
+
+.rightPanelContainer {
+	border-color: var(--slate-6);
+	border-style: solid;
+	border-width: 0 0 0 var(--border-1);
+	display: flex;
+	flex: none;
+	width: var(--size-12);
+}

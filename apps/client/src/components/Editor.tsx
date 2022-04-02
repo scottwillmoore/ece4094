@@ -1,13 +1,14 @@
 import {
 	FunctionComponent,
 	PointerEventHandler,
+	WheelEventHandler,
 	useCallback,
 	useState,
-	WheelEventHandler,
 } from "react";
-import { X } from "react-feather";
 
 import { Grid } from "./Grid";
+
+import css from "./Editor.module.css";
 
 export type Transform = {
 	scale: number;
@@ -52,7 +53,7 @@ export const Editor: FunctionComponent = () => {
 		setIsDown(false);
 	}, []);
 
-	const handleWheel: WheelEventHandler = useCallback(({ buttons, deltaX, deltaY }) => {
+	const handleWheel: WheelEventHandler = useCallback(({ deltaY }) => {
 		if (deltaY < 0) {
 			setTransform(({ scale, x, y }) => ({ scale: scale + 0.1, x, y }));
 		} else if (deltaY > 0) {
@@ -62,12 +63,19 @@ export const Editor: FunctionComponent = () => {
 
 	return (
 		<div
-			className="relative h-full w-full select-none bg-white dark:bg-gray-900"
+			className={css.editor}
 			onPointerDown={handleDown}
 			onPointerMove={handleMove}
 			onPointerUp={handleUp}
 			onWheel={handleWheel}
 		>
+			{/* Minor grid */}
+			{/* <Grid
+				transform={transform}
+				type="graph"
+				size={128}
+			/> */}
+
 			{/* Major grid */}
 			<Grid
 				transform={transform}
@@ -75,12 +83,12 @@ export const Editor: FunctionComponent = () => {
 				size={32}
 			/>
 
-			<svg className="absolute h-full w-full">
+			<svg className={css.document}>
 				<g transform={`translate(${transform.x}, ${transform.y}) scale(${transform.scale})`}>
 					<text
 						x={0}
 						y={0}
-						className="fill-black dark:fill-white"
+						className={css.textFill}
 					>
 						{transform.scale}, {transform.x}, {transform.y}
 					</text>
@@ -90,17 +98,10 @@ export const Editor: FunctionComponent = () => {
 						y={128}
 						width={128}
 						height={64}
-						className="fill-indigo-500"
+						className={css.componentFill}
 					/>
 				</g>
 			</svg>
-
-			{/* Minor grid */}
-			{/* <Grid
-				transform={transform}
-				type="graph"
-				size={128}
-			/> */}
 		</div>
 	);
 };

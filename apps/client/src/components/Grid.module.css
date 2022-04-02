@@ -1,0 +1,13 @@
+.grid {
+	height: 100%;
+	position: absolute;
+	width: 100%;
+}
+
+.stroke {
+	stroke: var(--slate-6);
+}
+
+.fill {
+	fill: var(--slate-6);
+}

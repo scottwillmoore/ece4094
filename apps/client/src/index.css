@@ -1,0 +1,77 @@
+:root {
+	--border-1: 0.0625rem;
+	--border-2: 0.125rem;
+	--border-3: 0.25rem;
+	--border-4: 0.5rem;
+
+	--border-none: 0;
+
+	--family-monospace: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+		"Liberation Mono", "Courier New", monospace;
+
+	--family-sans-serif: "IBM Plex Sans", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+		"Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+	--font-1: 0.75rem;
+	--font-2: 0.875rem;
+	--font-3: 1rem;
+	--font-4: 1.25rem;
+	--font-5: 1.5rem;
+	--font-6: 2rem;
+	--font-7: 3rem;
+	--font-8: 4rem;
+
+	--radius-1: 0.25rem;
+	--radius-2: 0.5rem;
+	--radius-3: 0.75rem;
+	--radius-4: 1rem;
+
+	--radius-full: 100%;
+	--radius-none: 0;
+
+	--size-1: 0.25rem;
+	--size-2: 0.5rem;
+	--size-3: 0.75rem;
+	--size-4: 1rem;
+	--size-5: 1.5rem;
+	--size-6: 2rem;
+	--size-7: 2.5rem;
+	--size-8: 3rem;
+	--size-9: 4rem;
+	--size-10: 5rem;
+	--size-11: 6rem;
+	--size-12: 8rem;
+
+	--size-full: 100%;
+	--size-none: 0;
+
+	--weight-black: 900;
+	--weight-bold: 700;
+	--weight-medium: 500;
+	--weight-regular: 400;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	height: 100%;
+}
+
+body {
+	background-color: var(--slate-1);
+	color: var(--slate-12);
+	font-family: var(--family-sans-serif);
+	height: 100%;
+	line-height: inherit;
+	margin: 0;
+}
+
+#root {
+	height: 100%;
+}
