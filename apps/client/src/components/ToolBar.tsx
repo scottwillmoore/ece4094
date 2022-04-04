@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-import { Icon, MessageCircle, MousePointer, Move, Settings, ZoomIn } from "react-feather-icons";
+import { Icon, MessageCircle, MousePointer, Move, Settings, ZoomIn } from "react-feather";
 
 import css from "./ToolBar.module.css";
 

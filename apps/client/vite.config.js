@@ -1,4 +1,4 @@
-const reactPlugin = require("vite-plugin-react");
+const reactPlugin = require("@vitejs/plugin-react");
 
 module.exports = {
 	plugins: [reactPlugin()],

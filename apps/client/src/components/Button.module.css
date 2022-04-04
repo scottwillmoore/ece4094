@@ -1,12 +1,12 @@
-.button,
+/* .button,
 .button::before,
 .button::after {
 	all: unset;
 	box-sizing: border-box;
-}
+} */
 
 .button {
-	align-items: center;
+	/* align-items: center;
 	box-sizing: border-box;
 	display: flex;
 	flex-shrink: 0;
@@ -17,7 +17,7 @@
 	padding: 0rem;
 	font-weight: 400;
 	user-select: none;
-	background-color: var(--blue4);
+	background-color: var(--blue4); */
 }
 
 .button:disabled {
