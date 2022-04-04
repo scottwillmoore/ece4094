@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "esbenp.prettier-vscode",
+        "silvenon.mdx",
+        "streetsidesoftware.code-spell-checker",
+        "vunguyentuan.vscode-css-variables",
+    ]
+}
