@@ -1,0 +1,19 @@
+{
+	"name": "@ece4094/ui",
+	"exports": {
+		"import": "./dist/index.mjs",
+		"require": "./dist/index.js"
+	},
+	"scripts": {
+		"build": "vite build",
+		"develop": "vite build --watch"
+	},
+	"devDependencies": {
+		"@types/react": "^17.0.43",
+		"vite": "^2.8.6",
+		"@vitejs/plugin-react": "^1.2.0"
+	},
+	"peerDependencies": {
+		"react": "^18.0.0-rc.3"
+	}
+}
