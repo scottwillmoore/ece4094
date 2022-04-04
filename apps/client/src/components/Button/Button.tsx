@@ -1,16 +1,5 @@
-import {
-	ComponentProps,
-	ComponentPropsWithRef,
-	ElementType,
-	ForwardedRef,
-	FunctionComponent,
-	PropsWithChildren,
-	ReactElement,
-	VoidFunctionComponent,
-	forwardRef,
-} from "react";
-
-import { Box, forwardRefWithAs } from "./Box";
+import { forwardRefWithAs } from "../../utilities/forwardRefWithAs";
+import { Box } from "../Box";
 
 import css from "./Button.module.css";
 

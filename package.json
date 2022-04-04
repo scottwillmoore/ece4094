@@ -10,11 +10,21 @@
 		"clean": "turbo run clean",
 		"develop": "turbo run develop --continue --parallel",
 		"format": "prettier --write .",
+		"storybook": "start-storybook --port 6006",
 		"test": "turbo run test"
 	},
 	"devDependencies": {
+		"@babel/core": "^7.17.8",
+		"@storybook/addon-actions": "^6.4.20",
+		"@storybook/addon-essentials": "^6.4.20",
+		"@storybook/addon-interactions": "^6.4.20",
+		"@storybook/addon-links": "^6.4.20",
+		"@storybook/react": "^6.4.20",
+		"@storybook/testing-library": "^0.0.9",
+		"@trivago/prettier-plugin-sort-imports": "^3.2.0",
+		"babel-loader": "^8.2.4",
 		"prettier": "^2.6.1",
-		"prettier-plugin-sort-imports": "npm:@trivago/prettier-plugin-sort-imports@^3.2.0",
+		"storybook-dark-mode": "^1.0.9",
 		"turbo": "^1.1.6"
 	}
 }
