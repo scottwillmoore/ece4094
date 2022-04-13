@@ -32,6 +32,10 @@
 			"path": "./packages/server"
 		},
 		{
+			"name": "@ece4094/storybook",
+			"path": "./packages/storybook"
+		},
+		{
 			"name": "@ece4094/ui",
 			"path": "./packages/ui"
 		}
