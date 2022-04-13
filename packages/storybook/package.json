@@ -8,15 +8,12 @@
 		"develop": "start-storybook --config-dir ./ --no-open --quiet"
 	},
 	"dependencies": {
+		"@ece4094/ui": "*",
 		"react": "^18.0.0",
 		"react-dom": "^18.0.0"
 	},
 	"devDependencies": {
-		"@storybook/addon-actions": "^6.4.21",
-		"@storybook/addon-essentials": "^6.4.21",
-		"@storybook/addon-interactions": "^6.4.21",
-		"@storybook/addon-links": "^6.4.21",
-		"@storybook/react": "^6.4.21",
-		"@storybook/cli": "^6.4.21"
+		"@storybook/addon-essentials": "^6.5.0-alpha",
+		"@storybook/react": "^6.5.0-alpha"
 	}
 }

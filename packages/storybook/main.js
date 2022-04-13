@@ -1,10 +1,5 @@
 module.exports = {
-	addons: [
-		"@storybook/addon-actions",
-		"@storybook/addon-essentials",
-		"@storybook/addon-interactions",
-		"@storybook/addon-links",
-	],
+	addons: ["@storybook/addon-essentials"],
 	framework: "@storybook/react",
 	stories: ["../*/src/**/*.stories.@(js|jsx|ts|tsx)"],
 };
