@@ -1,0 +1,19 @@
+{
+	"private": true,
+	"name": "@ece4094/app-web",
+	"source": "./src/index.html",
+	"scripts": {
+		"build": "parcel build",
+		"clean": "shx rm -rf ./dist",
+		"develop": "parcel serve"
+	},
+	"dependencies": {
+		"@ece4094/app": "*",
+		"react": "^18.0.0",
+		"react-dom": "^18.0.0"
+	},
+	"devDependencies": {
+		"@types/react": "^18.0.2",
+		"@types/react-dom": "^18.0.0"
+	}
+}

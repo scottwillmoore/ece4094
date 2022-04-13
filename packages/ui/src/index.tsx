@@ -1,3 +1,4 @@
-export function greet(name: string) {
-	console.log(`Hello, ${name}!`);
-}
+import "./index.css";
+
+export * from "./components";
+export * from "./utilities";
