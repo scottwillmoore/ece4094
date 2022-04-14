@@ -9,12 +9,12 @@ export type ButtonColor = "blue" | "gray" | "green" | "red";
 
 export type ButtonSize = "small" | "medium" | "large";
 
-export type ButtonProperties = {
+export type ButtonProps = {
 	color: ButtonColor;
 	size: ButtonSize;
 };
 
-export const Button = forwardRefWithAs<typeof defaultAs, ButtonProperties>(
+export const Button = forwardRefWithAs<typeof defaultAs, ButtonProps>(
 	({ as = defaultAs, children, className, color, size, ...props }, ref) => {
 		return (
 			<Box
