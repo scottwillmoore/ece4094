@@ -3,7 +3,6 @@
 	"private": true,
 	"name": "@ece4094/ui",
 	"source": "./src/index.tsx",
-	"sideEffects": false,
 	"main": "./dist/index.js",
 	"module": "./dist/index.mjs",
 	"types": "./dist/index.d.ts",

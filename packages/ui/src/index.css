@@ -2,48 +2,75 @@
 @import url("./themes/light.css");
 
 :root {
+	/* 1px */
 	--border-1: 0.0625rem;
+	/* 2px */
 	--border-2: 0.125rem;
+	/* 4px */
 	--border-3: 0.25rem;
+	/* 8px */
 	--border-4: 0.5rem;
 
 	--border-none: 0;
 
 	--family-monospace: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
 		"Liberation Mono", "Courier New", monospace;
-
 	--family-sans-serif: "IBM Plex Sans", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
 		"Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
 		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
+	/* 12px */
 	--font-1: 0.75rem;
+	/* 14px */
 	--font-2: 0.875rem;
+	/* 16px */
 	--font-3: 1rem;
+	/* 20px */
 	--font-4: 1.25rem;
+	/* 24px */
 	--font-5: 1.5rem;
+	/* 32px */
 	--font-6: 2rem;
+	/* 48px */
 	--font-7: 3rem;
+	/* 64px */
 	--font-8: 4rem;
 
+	/* 4px */
 	--radius-1: 0.25rem;
+	/* 8px */
 	--radius-2: 0.5rem;
+	/* 12px */
 	--radius-3: 0.75rem;
+	/* 16px */
 	--radius-4: 1rem;
 
 	--radius-full: 100%;
 	--radius-none: 0;
 
+	/* 4px */
 	--size-1: 0.25rem;
+	/* 8px */
 	--size-2: 0.5rem;
+	/* 12px */
 	--size-3: 0.75rem;
+	/* 16px */
 	--size-4: 1rem;
+	/* 24px */
 	--size-5: 1.5rem;
+	/* 32px */
 	--size-6: 2rem;
+	/* 40px */
 	--size-7: 2.5rem;
+	/* 48px */
 	--size-8: 3rem;
+	/* 64px */
 	--size-9: 4rem;
+	/* 80px */
 	--size-10: 5rem;
+	/* 96px */
 	--size-11: 6rem;
+	/* 128px */
 	--size-12: 8rem;
 
 	--size-full: 100%;

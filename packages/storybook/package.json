@@ -5,7 +5,7 @@
 	"scripts": {
 		"build": "build-storybook --config-dir ./ --output-dir ./dist",
 		"clean": "shx rm -r ./dist",
-		"develop": "start-storybook --config-dir ./ --no-open --quiet"
+		"develop": "start-storybook --config-dir ./ --no-open --port 8001 --quiet"
 	},
 	"dependencies": {
 		"@ece4094/ui": "*",
@@ -14,6 +14,8 @@
 	},
 	"devDependencies": {
 		"@storybook/addon-essentials": "^6.5.0-alpha",
-		"@storybook/react": "^6.5.0-alpha"
+		"@storybook/react": "^6.5.0-alpha",
+		"storybook-css-modules-preset": "^1.1.1",
+		"storybook-dark-mode": "^1.0.9"
 	}
 }
