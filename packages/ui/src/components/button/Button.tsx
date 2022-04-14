@@ -1,4 +1,7 @@
-import { forwardRefWithAs } from "../../utilities/forwardRefWithAs";
+import {
+	ForwardRefExoticComponentWithAs,
+	forwardRefWithAs,
+} from "../../utilities/forwardRefWithAs";
 import { Box } from "../box/Box";
 
 import css from "./Button.module.css";
