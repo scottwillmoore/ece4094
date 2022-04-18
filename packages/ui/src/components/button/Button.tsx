@@ -1,15 +1,11 @@
-import {
-	ForwardRefExoticComponentWithAs,
-	forwardRefWithAs,
-} from "../../utilities/forwardRefWithAs";
-import { Box } from "../box/Box";
+import { As, ForwardRefExoticComponentWithAs, forwardRefWithAs } from "../../utilities";
+import { Box } from "../box";
 
-import css from "./Button.module.css";
+import css from "./Button.module.scss";
 
-const defaultAs = "button";
+const defaultAs: As = "button";
 
 export type ButtonColor = "blue" | "gray" | "green" | "red";
-
 export type ButtonSize = "small" | "medium" | "large";
 
 export type ButtonProps = {
@@ -22,7 +18,8 @@ export const Button = forwardRefWithAs<typeof defaultAs, ButtonProps>(
 		return (
 			<Box
 				as={as}
-				className={[css.button, css[color], css[size]]}
+				classList={[css.button]}
+				dataSet={{ color, size }}
 				ref={ref}
 				{...props}
 			>

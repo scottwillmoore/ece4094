@@ -6,7 +6,6 @@ import {
 	useState,
 } from "react";
 
-import { Awareness } from "./Awareness";
 import { Grid } from "./Grid";
 
 import css from "./Editor.module.css";
@@ -103,8 +102,6 @@ export const Editor: FunctionComponent = () => {
 					/>
 				</g>
 			</svg>
-
-			<Awareness />
 		</div>
 	);
 };

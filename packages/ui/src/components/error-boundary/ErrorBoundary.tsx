@@ -1,5 +1,7 @@
 import { Component, ComponentType, ErrorInfo, PropsWithChildren } from "react";
 
+import { ErrorFallback as DefaultErrorFallback } from "./ErrorFallback";
+
 export type FallbackComponentProps = {
 	error: Error;
 	reset: () => void;
@@ -8,7 +10,7 @@ export type FallbackComponentProps = {
 export type FallbackComponent = ComponentType<FallbackComponentProps>;
 
 export type ErrorBoundaryProps = PropsWithChildren<{
-	fallbackComponent: FallbackComponent;
+	fallbackComponent?: FallbackComponent;
 	onError?: (error: Error, errorInfo: ErrorInfo) => void;
 	onReset?: () => void;
 }>;
@@ -34,7 +36,7 @@ export class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundarySt
 
 	override render = () => {
 		if (this.state.error !== null) {
-			const FallbackComponent = this.props.fallbackComponent;
+			const FallbackComponent = this.props.fallbackComponent || DefaultErrorFallback;
 			return (
 				<FallbackComponent
 					error={this.state.error}

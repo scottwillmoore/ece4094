@@ -16,5 +16,8 @@
 	},
 	"peerDependencies": {
 		"react": "^18.0.0"
+	},
+	"dependencies": {
+		"@ibm/plex": "^6.0.0"
 	}
 }

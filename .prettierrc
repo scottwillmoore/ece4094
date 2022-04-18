@@ -4,9 +4,9 @@
 	"importOrder": [
 		"^@ece4094/.*$",
 		"^@/.*$",
-		"^[./](?!.*[.]css$).*$",
-		"^[./].*[.]module[.]css$",
-		"^[./].*[.]css$"
+		"^[./](?!.*\\.s?css$).*$",
+		"^[./].*\\.module\\.s?css$",
+		"^[./].*\\.s?css$"
 	],
 	"importOrderSeparation": true,
 	"importOrderSortSpecifiers": true,

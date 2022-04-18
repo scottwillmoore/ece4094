@@ -10,7 +10,7 @@ import {
 	forwardRef,
 } from "react";
 
-type As<T = {}> = ElementType<T>;
+export type As<T = {}> = ElementType<T>;
 
 type AsElement<T extends As> = T extends keyof HTMLElementTagNameMap
 	? HTMLElementTagNameMap[T]
@@ -18,11 +18,11 @@ type AsElement<T extends As> = T extends keyof HTMLElementTagNameMap
 	? SVGElementTagNameMap[T]
 	: any;
 
-type AsProp<T extends As> = { as?: T };
+export type AsProp<T extends As> = { as?: T };
 
 type Merge<T, U> = T & Omit<U, keyof T>;
 
-type PropsWithAs<T extends As, P> = Merge<AsProp<T> & P, ComponentPropsWithRef<T>>;
+export type PropsWithAs<T extends As, P> = Merge<AsProp<T> & P, ComponentPropsWithRef<T>>;
 
 // prettier-ignore
 export type ExoticComponentWithAs<T extends As, P> = 

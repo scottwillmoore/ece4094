@@ -1,22 +1,24 @@
 import { FunctionComponent } from "react";
 
-import { Button } from "@ece4094/ui";
+import { Box, Center, Column, ErrorBoundary, Row } from "@ece4094/ui";
 
-import css from "./App.module.css";
+import { Editor } from "../editor/Editor";
 
-// import { Editor } from "../Editor";
+import css from "./App.module.scss";
 
-export const App: FunctionComponent = () => {
-	return (
-		<div className={css.app}>
-			<div className={css.topContainer}>
-				<Button>Hello, world!</Button>
-			</div>
-			<div className={css.horizontalContainer}>
-				<div className={css.leftPanelContainer}></div>
-				<div className={css.editorContainer}>{/* <Editor /> */}</div>
-				<div className={css.rightPanelContainer}></div>
-			</div>
-		</div>
-	);
-};
+export const App: FunctionComponent = () => (
+	<ErrorBoundary>
+		<Column classList={[css.app]}>
+			<Row classList={[css.topPanel]}>
+				<Center classList={[css.logo]}>A</Center>
+			</Row>
+			<Row classList={[css.row]}>
+				<Box classList={[css.leftPanel]}></Box>
+				<Box classList={[css.editor]}>
+					<Editor />
+				</Box>
+				<Box classList={[css.rightPanel]}></Box>
+			</Row>
+		</Column>
+	</ErrorBoundary>
+);

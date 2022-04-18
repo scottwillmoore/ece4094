@@ -1,6 +1,3 @@
-@import url("./themes/dark.css");
-@import url("./themes/light.css");
-
 :root {
 	/* 1px */
 	--border-1: 0.0625rem;

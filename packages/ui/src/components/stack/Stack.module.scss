@@ -1,0 +1,79 @@
+.stack {
+	display: flex;
+
+	/* data-align */
+
+	&[data-align="baseline"] {
+		align-items: baseline;
+	}
+
+	&[data-align="center"] {
+		align-items: center;
+	}
+
+	&[data-align="end"] {
+		align-items: end;
+	}
+
+	&[data-align="normal"] {
+		align-items: normal;
+	}
+
+	&[data-align="start"] {
+		align-items: start;
+	}
+
+	&[data-align="stretch"] {
+		align-items: stretch;
+	}
+
+	/* data-direction */
+
+	&[data-direction="column"] {
+		flex-direction: column;
+	}
+
+	&[data-direction="row"] {
+		flex-direction: row;
+	}
+
+	/* data-inline */
+
+	&[data-inline] {
+		display: inline-flex;
+	}
+
+	/* data-justify */
+
+	&[data-justify="around"] {
+		justify-content: space-around;
+	}
+
+	&[data-justify="between"] {
+		justify-content: space-between;
+	}
+
+	&[data-justify="center"] {
+		justify-content: center;
+	}
+
+	&[data-justify="end"] {
+		justify-content: end;
+	}
+
+	&[data-justify="even"] {
+		justify-content: space-evenly;
+	}
+
+	&[data-justify="normal"] {
+		justify-content: normal;
+	}
+
+	&[data-justify="start"] {
+		justify-content: start;
+	}
+
+	&[data-justify="stretch"] {
+		justify-content: stretch;
+	}
+}

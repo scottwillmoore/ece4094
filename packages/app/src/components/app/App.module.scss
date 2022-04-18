@@ -1,46 +1,51 @@
 .app {
+	display: flex;
 	background-color: var(--slate-1);
 	color: var(--slate-12);
-	display: flex;
-	flex-direction: column;
 	height: 100%;
 	width: 100%;
 }
 
-.topContainer {
+.topPanel {
 	border-color: var(--slate-6);
 	border-style: solid;
 	border-width: 0 0 var(--border-1) 0;
-	display: flex;
 	flex: none;
-	height: var(--size-8);
-	padding: var(--size-1);
+	height: var(--size-6);
 }
 
-.horizontalContainer {
-	display: flex;
-	flex-grow: 1;
+.logo {
+	border-color: var(--slate-6);
+	border-style: solid;
+	border-width: 0 var(--border-1) 0 0;
+	width: var(--size-6);
 }
 
-.leftPanelContainer {
+.row {
+	flex: 1;
+}
+
+.leftPanel {
 	border-color: var(--slate-6);
 	border-style: solid;
 	border-width: 0 var(--border-1) 0 0;
 	display: flex;
 	flex: none;
-	width: var(--size-12);
+	height: 100%;
+	width: var(--size-6);
 }
 
-.editorContainer {
+.editor {
 	display: flex;
-	flex-grow: 1;
+	flex: 1;
 }
 
-.rightPanelContainer {
+.rightPanel {
 	border-color: var(--slate-6);
 	border-style: solid;
 	border-width: 0 0 0 var(--border-1);
 	display: flex;
 	flex: none;
-	width: var(--size-12);
+	height: 100%;
+	width: calc(2 * var(--size-12));
 }
