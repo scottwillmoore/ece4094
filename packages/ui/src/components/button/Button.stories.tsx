@@ -3,6 +3,8 @@ import { ComponentMeta, ComponentStory } from "@storybook/react";
 import { Button } from "./Button";
 
 import "../../index.css";
+import "../../themes/dark.css";
+import "../../themes/light.css";
 
 export default {
 	component: Button,
