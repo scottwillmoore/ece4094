@@ -16,24 +16,16 @@
 			"path": "./packages/app"
 		},
 		{
-			"name": "@ece4094/app-desktop",
-			"path": "./packages/app-desktop"
-		},
-		{
 			"name": "@ece4094/app-web",
 			"path": "./packages/app-web"
 		},
 		{
-			"name": "@ece4094/common",
-			"path": "./packages/common"
+			"name": "@ece4094/config",
+			"path": "./packages/config"
 		},
 		{
-			"name": "@ece4094/server",
-			"path": "./packages/server"
-		},
-		{
-			"name": "@ece4094/storybook",
-			"path": "./packages/storybook"
+			"name": "@ece4094/design",
+			"path": "./packages/design"
 		},
 		{
 			"name": "@ece4094/ui",

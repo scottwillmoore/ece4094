@@ -1,0 +1,11 @@
+:root,
+[data-theme="light"] {
+}
+
+@media (prefers-color-scheme: dark) {
+	:root:not([data-theme="light"]) {
+	}
+}
+
+[data-theme="dark"] {
+}

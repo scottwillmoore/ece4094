@@ -1,0 +1,116 @@
+{
+	"color": {
+		"background": {
+			"theme": "light",
+			"value": "{palette.neutral.99}"
+		},
+		"error": {
+			"theme": "light",
+			"value": "{palette.error.40}"
+		},
+		"error-container": {
+			"theme": "light",
+			"value": "{palette.error.90}"
+		},
+		"inverse-on-surface": {
+			"theme": "light",
+			"value": "{palette.neutral.95}"
+		},
+		"inverse-primary": {
+			"theme": "light",
+			"value": "{palette.primary.80}"
+		},
+		"inverse-surface": {
+			"theme": "light",
+			"value": "{palette.neutral.20}"
+		},
+		"on-background": {
+			"theme": "light",
+			"value": "{palette.neutral.10}"
+		},
+		"on-error": {
+			"theme": "light",
+			"value": "{palette.error.100}"
+		},
+		"on-error-container": {
+			"theme": "light",
+			"value": "{palette.error.10}"
+		},
+		"on-primary": {
+			"theme": "light",
+			"value": "{palette.primary.100}"
+		},
+		"on-primary-container": {
+			"theme": "light",
+			"value": "{palette.primary.10}"
+		},
+		"on-secondary": {
+			"theme": "light",
+			"value": "{palette.secondary.100}"
+		},
+		"on-secondary-container": {
+			"theme": "light",
+			"value": "{palette.secondary.10}"
+		},
+		"on-surface": {
+			"theme": "light",
+			"value": "{palette.neutral.10}"
+		},
+		"on-surface-variant": {
+			"theme": "light",
+			"value": "{palette.neutral-variant.30}"
+		},
+		"on-tertiary": {
+			"theme": "light",
+			"value": "{palette.tertiary.100}"
+		},
+		"on-tertiary-container": {
+			"theme": "light",
+			"value": "{palette.tertiary.10}"
+		},
+		"outline": {
+			"theme": "light",
+			"value": "{palette.neutral-variant.50}"
+		},
+		"primary": {
+			"theme": "light",
+			"value": "{palette.primary.40}"
+		},
+		"primary-container": {
+			"theme": "light",
+			"value": "{palette.primary.90}"
+		},
+		"secondary": {
+			"theme": "light",
+			"value": "{palette.secondary.40}"
+		},
+		"secondary-container": {
+			"theme": "light",
+			"value": "{palette.secondary.90}"
+		},
+		"shadow": {
+			"theme": "light",
+			"value": "{palette.neutral.0}"
+		},
+		"surface": {
+			"theme": "light",
+			"value": "{palette.neutral.99}"
+		},
+		"surface-tint-color": {
+			"theme": "light",
+			"value": "{color.primary}"
+		},
+		"surface-variant": {
+			"theme": "light",
+			"value": "{palette.neutral-variant.90}"
+		},
+		"tertiary": {
+			"theme": "light",
+			"value": "{palette.tertiary.40}"
+		},
+		"tertiary-container": {
+			"theme": "light",
+			"value": "{palette.tertiary.90}"
+		}
+	}
+}

@@ -13,6 +13,7 @@
 		"develop": "parcel watch --no-hmr"
 	},
 	"dependencies": {
+		"@ece4094/config": "*",
 		"@ece4094/ui": "*"
 	},
 	"devDependencies": {

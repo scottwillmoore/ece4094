@@ -12,12 +12,10 @@
 		"develop": "parcel watch --no-hmr"
 	},
 	"devDependencies": {
+		"@ece4094/config": "*",
 		"@types/react": "^18.0.2"
 	},
 	"peerDependencies": {
 		"react": "^18.0.0"
-	},
-	"dependencies": {
-		"@ibm/plex": "^6.0.0"
 	}
 }

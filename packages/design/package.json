@@ -1,0 +1,14 @@
+{
+	"$schema": "https://json.schemastore.org/package.json",
+	"private": true,
+	"name": "@ece4094/design",
+	"main": "./dist",
+	"scripts": {
+		"build": "style-dictionary build",
+		"clean": "shx rm -r ./dist"
+	},
+	"devDependencies": {
+		"@types/node": "^17.0.25",
+		"style-dictionary": "^3.7.0"
+	}
+}

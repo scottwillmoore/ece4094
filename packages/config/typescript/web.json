@@ -1,0 +1,14 @@
+{
+	"$schema": "http://json.schemastore.org/tsconfig",
+
+	"display": "Web",
+	"extends": "./common",
+
+	"compilerOptions": {
+		"isolatedModules": true,
+		"jsx": "preserve",
+		"lib": ["DOM", "DOM.Iterable", "ESNext"],
+		"module": "ESNext",
+		"target": "ESNext"
+	}
+}

@@ -4,6 +4,33 @@
 
 The goal is to develop a web-based collaborative circuit schematic capture and simulation application with conflict-free replicated data types to enable multiplayer-based capabilities.
 
+## Packages
+
+```
+app
+app-electron
+app-tauri
+app-web
+
+common
+
+config
+
+design
+
+server
+server-aws
+server-cloudflare
+server-express
+
+simulation
+simulation-ngspice
+
+storybook
+
+ui
+```
+
 ## References
 
 ### CRDTs

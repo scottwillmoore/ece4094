@@ -1,0 +1,116 @@
+{
+	"color": {
+		"background": {
+			"theme": "dark",
+			"value": "{palette.neutral.10}"
+		},
+		"error": {
+			"theme": "dark",
+			"value": "{palette.error.80}"
+		},
+		"error-container": {
+			"theme": "dark",
+			"value": "{palette.error.30}"
+		},
+		"inverse-on-surface": {
+			"theme": "dark",
+			"value": "{palette.neutral.20}"
+		},
+		"inverse-primary": {
+			"theme": "dark",
+			"value": "{palette.primary.40}"
+		},
+		"inverse-surface": {
+			"theme": "dark",
+			"value": "{palette.neutral.90}"
+		},
+		"on-background": {
+			"theme": "dark",
+			"value": "{palette.neutral.90}"
+		},
+		"on-error": {
+			"theme": "dark",
+			"value": "{palette.error.20}"
+		},
+		"on-error-container": {
+			"theme": "dark",
+			"value": "{palette.error.80}"
+		},
+		"on-primary": {
+			"theme": "dark",
+			"value": "{palette.primary.20}"
+		},
+		"on-primary-container": {
+			"theme": "dark",
+			"value": "{palette.primary.90}"
+		},
+		"on-secondary": {
+			"theme": "dark",
+			"value": "{palette.secondary.20}"
+		},
+		"on-secondary-container": {
+			"theme": "dark",
+			"value": "{palette.secondary.90}"
+		},
+		"on-surface": {
+			"theme": "dark",
+			"value": "{palette.neutral.90}"
+		},
+		"on-surface-variant": {
+			"theme": "dark",
+			"value": "{palette.neutral-variant.80}"
+		},
+		"on-tertiary": {
+			"theme": "dark",
+			"value": "{palette.tertiary.20}"
+		},
+		"on-tertiary-container": {
+			"theme": "dark",
+			"value": "{palette.tertiary.90}"
+		},
+		"outline": {
+			"theme": "dark",
+			"value": "{palette.neutral-variant.60}"
+		},
+		"primary": {
+			"theme": "dark",
+			"value": "{palette.primary.80}"
+		},
+		"primary-container": {
+			"theme": "dark",
+			"value": "{palette.primary.30}"
+		},
+		"secondary": {
+			"theme": "dark",
+			"value": "{palette.secondary.80}"
+		},
+		"secondary-container": {
+			"theme": "dark",
+			"value": "{palette.secondary.30}"
+		},
+		"shadow": {
+			"theme": "dark",
+			"value": "{palette.neutral.0}"
+		},
+		"surface": {
+			"theme": "dark",
+			"value": "{palette.neutral.10}"
+		},
+		"surface-tint-color": {
+			"theme": "dark",
+			"value": "{color.primary}"
+		},
+		"surface-variant": {
+			"theme": "dark",
+			"value": "{palette.neutral-variant.30}"
+		},
+		"tertiary": {
+			"theme": "dark",
+			"value": "{palette.tertiary.80}"
+		},
+		"tertiary-container": {
+			"theme": "dark",
+			"value": "{palette.tertiary.30}"
+		}
+	}
+}

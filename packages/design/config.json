@@ -1,0 +1,23 @@
+{
+	"source": ["./src/**/*.json"],
+	"platforms": {
+		"web": {
+			"buildPath": "./dist/",
+			"files": [
+				{
+					"destination": "index.css",
+					"format": "css/variables",
+					"options": {
+						"outputReferences": true,
+						"showFileHeader": false
+					}
+				},
+				{
+					"format": "json/nested",
+					"destination": "index.json"
+				}
+			],
+			"transformGroup": "web"
+		}
+	}
+}

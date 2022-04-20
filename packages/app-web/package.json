@@ -9,6 +9,7 @@
 	},
 	"dependencies": {
 		"@ece4094/app": "*",
+		"@ece4094/config": "*",
 		"react": "^18.0.0",
 		"react-dom": "^18.0.0"
 	},
